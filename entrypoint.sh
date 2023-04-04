@@ -2,7 +2,7 @@
 #Alireza <https://github.com/AlirezaAsadian>
 
 WSPATH=${WSPATH:-'argo'}
-UUID=${UUID:-'db5b4014-d2da-11ed-afa1-0242ac120002'}
+UUID=${UUID:-'########-####-####-####-############'}
 
 NEZHA_SERVER= 
 NEZHA_PORT=
