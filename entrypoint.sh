@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Alireza <https://github.com/AlirezaAsadian>
 
 WSPATH=${WSPATH:-'argo'}
 UUID=${UUID:-'db5b4014-d2da-11ed-afa1-0242ac120002'}
@@ -269,7 +270,6 @@ vmess://\$(echo \$VMESS | base64 -w0)
 trojan://${UUID}@icook.hk:443?security=tls&sni=\${ARGO_DOMAIN}&type=ws&host=\${ARGO_DOMAIN}&path=%2F${WSPATH}-trojan?ed=2048#Argo-Trojan
 ----------------------------
 ss://$(echo "chacha20-ietf-poly1305:${UUID}@icook.hk:443" | base64 -w0)@icook.hk:443#Argo-Shadowsocks
-由于该软件导出的链接不全，请自行处理如下: 传输协议: WS ， 伪装域名: \${ARGO_DOMAIN} ，路径: /${WSPATH}-shadowsocks?ed=2048 ， 传输层安全: tls ， sni: \${ARGO_DOMAIN}
 *******************************************
 EOF
   cat list
